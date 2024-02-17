@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!-- nav bar start -->
+    <nav class="lg:container mx-auto ">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+                        <li><a class="hover:text-red-500">Home</a></li>
+                        <li><a class="hover:text-red-500">About</a></li>
+                        <li><a class="hover:text-red-500" class="hover:text-red-500">Pages</a></li>
+                        <li><a class="hover:text-red-500" class="hover:text-red-500">Blog</a></li>
+                        <li><a class="hover:text-red-500" class="hover:text-red-500">Contact</a></li>
+                    </ul>
+                </div>
+                <a class="text-xl font-bold lg:text-3xl">E<span class="text-red-500 ">-</span>Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a class="hover:text-red-500 lg:text-red-500 lg:font-medium">Home</a></li>
+                    <li><a class="hover:text-red-500">About</a></li>
+                    <li><a class="hover:text-red-500">Destination</a></li>
+                    <li><a class="hover:text-red-500">Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end mt-3">
+                <div class="">
+                    <button class="btn bg-green-50 border-green-200">
+                        <h3 class="text-green-400">Bus</h3><img src="./images/bus-icon.png" alt="">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar end -->
+    <!-- background  start-->
+    <section class="container mx-auto ">
+        <div class="hero min-h-screen  " style="background-image: url('./images/banner.png');">
+            <div class="hero-overlay bg-opacity-60 "></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold text-green-500">Travel with Satkhira Paribahan</h1>
+                <p class="mb-5">One of the popular travel bus in Bangladesh.</p>
+                <button class="btn bg-green-700 border-none text-white">Buy Ticket</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- background End -->
+
+    <!-- ticket offer start -->
+
+    <section>
+        <div class="container mx-auto mt-7 lg:mt-11 ">
+            <h1 class="text-3xl font-bold text-center">Best offers for you</h1>
+            <div class=" flex w-full lg:flex-row flex-col border-spacing-16 gap-3 p-3 h-[220px] ">
+                <div class="flex lg:w-[50%] gap-3 bg-[#FFBF0F] rounded-xl ">
+                    <div class="flex flex-col justify-center items-center w-[65%] " >
+                        <h1 class="text-xl font-bold ">15% OFF</h1>
+                        <p class="text-md font-bold ">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <h1 class="text-xl font-bold ">NEW15</h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                <div class=" flex lg:w-[50%] gap-3 bg-[#F78C9C] rounded-xl">
+                    <div class="flex flex-col justify-center items-center w-[65%] " >
+                        <h1 class="text-xl font-bold ">20% OFF</h1>
+                        <p class="text-md font-bold ">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <h1 class="text-xl font-bold ">Couple 20</h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ticket offer end -->
+    <div class="container mx-auto lg:mt-11">
+        <div class="flex justify-center">
+            <button class="btn btn-outline btn-accent">See All Offer</button>
+        </div>
+    </div>
+</body>
+
+</html>
