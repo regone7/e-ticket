@@ -44,7 +44,7 @@
             </div>
             <div class="navbar-end mt-3">
                 <div class="">
-                    <button class="btn bg-green-50 border-green-200">
+                    <button class="btn bg-green-200 border-none">
                         <h3 class="text-green-400">Bus</h3><img src="./images/bus-icon.png" alt="">
                     </button>
                 </div>
@@ -58,13 +58,13 @@
         <div class="hero min-h-screen  " style="background-image: url('./images/banner.png');">
             <div class="hero-overlay bg-opacity-60 "></div>
             <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold text-green-500">Travel with Satkhira Paribahan</h1>
-                <p class="mb-5">One of the popular travel bus in Bangladesh.</p>
-                <button class="btn bg-green-700 border-none text-white">Buy Ticket</button>
-              </div>
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold text-green-500">Travel with Satkhira Paribahan</h1>
+                    <p class="mb-5">One of the popular travel bus in Bangladesh.</p>
+                    <a href="#buy_ticket"><button class="btn bg-green-700 border-none text-white hover:bg-cyan-300">Buy Ticket</button></a>
+                </div>
             </div>
-          </div>
+        </div>
     </section>
     <!-- background End -->
 
@@ -75,7 +75,7 @@
             <h1 class="text-3xl font-bold text-center">Best offers for you</h1>
             <div class=" flex w-full lg:flex-row flex-col border-spacing-16 gap-3 p-3 h-[220px] ">
                 <div class="flex lg:w-[50%] gap-3 bg-[#FFBF0F] rounded-xl ">
-                    <div class="flex flex-col justify-center items-center w-[65%] " >
+                    <div class="flex flex-col justify-center items-center w-[65%] ">
                         <h1 class="text-xl font-bold ">15% OFF</h1>
                         <p class="text-md font-bold ">on your next purchase</p>
                         <p>use by January 2024</p>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class=" flex lg:w-[50%] gap-3 bg-[#F78C9C] rounded-xl">
-                    <div class="flex flex-col justify-center items-center w-[65%] " >
+                    <div class="flex flex-col justify-center items-center w-[65%] ">
                         <h1 class="text-xl font-bold ">20% OFF</h1>
                         <p class="text-md font-bold ">on your next purchase</p>
                         <p>use by January 2024</p>
@@ -105,6 +105,152 @@
             <button class="btn btn-outline btn-accent">See All Offer</button>
         </div>
     </div>
+    <!-- ticket seat start -->
+    <main class="bg-[#F7F8F8] rounded-tl-3xl rounded-tr-3xl  border-t-2 border-lime-300 mt-9 lg:mt-11">
+        <div class="mt-11">
+            <h1 class="text-2xl font-bold text-center">Satkhira Paribahan</h1>
+            <p class="text-center">This is most popular paribahan.</p>
+        </div>
+        <!-- seat and price start -->
+        
+        <section class="container mx-auto lg:mt-11 mt-5  bg-white rounded-sm p-7">
+            <div class="flex">
+                <div class="lg:w-[65%]">
+                    <div class="flex lg:justify-between">
+                        <div class="flex gap-2">
+                            <div>
+                                <img src="./images/bus-logo.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-xl font-bold">Satkhira Paribahan</h1>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-green-200 rounded-lg p-3">
+                            <img src="./images/seat-green.png" alt="">
+                            <!-- seats 8 -->
+                            <span class="text-xl font-bold text-red-500">8</span>
+                            <!-- ####### -->
+                            <p>seats left</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-md mt-3">
+                        <div class="flex lg:justify-between p-7 gap-3">
+
+                            <p class="text-xl">Route</p>
+
+                            <div class="flex">
+                                <p class="text-xl">Dhaka</p>
+                                <span>-</span>
+                                <p class="text-xl">Satkhira</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="flex lg:justify-between p-7 gap-3">
+
+                            <p class="text-xl">Departure</p>
+
+                            <div class="flex">
+                                <p class="text-xl">9:00</p>
+                                <p class="text-xl"> P.M</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex flex-col items-center lg:w-[34%] pt-20">
+                    <img src="./images/fare.png" alt="">
+                    <h1>500 TK</h1>
+                    <p>per seat</p>
+                </div>
+            </div>
+        </section>
+        <!-- seat and price start -->
+        <!-- ticket booking start -->
+        <section id="buy_ticket" class="container mx-auto  mt-5  bg-white rounded-2xl p-7">
+            <div class="lg:flex lg:w-full">
+                <div class="lg:w-[40%] lg:p-5 lg:m-16"> 
+                    <h1 class="text-xl font-bold">Select Your Seat</h1>
+                    <br>
+                    <hr>
+                    <div class="flex justify-between items-center my-4">
+                        <div class="flex gap-2">
+                            <img src="./images/seat-gray.png" alt="">
+                            <p>Available</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./images/seat-green-filled.png" alt="">
+                            <p>Selected</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flex my-3 justify-end">
+                        <img src="./images/chaka.png" alt="">
+                    </div>
+                    <div class="flex space-x-5 justify-between">
+                        <div class="flex gap-2">
+                            <button class="btn">A1</button>
+                            <button class="btn">A2</button>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="btn">A3</button>
+                            <button class="btn">A4</button>
+                        </div>
+                    </div>
+                    <div class="flex space-x-5 my-3 justify-between">
+                        <div class="flex gap-2">
+                            <button class="btn">B1</button>
+                            <button class="btn">B2</button>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="btn">B3</button>
+                            <button class="btn">B4</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-[59%] lg:p-9 lg:m-7 ">
+                    <h1 class="text-xl font-bold mt-7 ">Select Your Seat</h1>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="bg-gray-100 p-5 rounded-xl" >
+                        <div class="flex justify-between">
+                            <div>
+                                <h1 class="text-xl font-bold">Seat <sup class="text-green-300 font-bold text-xl">0</sup></h1>
+                            </div>
+                            <div>
+                                <h1  class="text-xl font-bold">Class</h1>
+                            </div>
+                            <div>
+                                <h1 class="text-xl font-bold">Price</h1>
+                            </div>
+                        </div>
+                        <div class="flex justify-between my-5 ">
+                            <h1 class="text-xl font-bold ">Total Price</h1>
+                            <p class="text-xl font-bold">BDT <span > 0</span></p>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Have any copupone?" class="input input-bordered w-full relative " />
+                            <button class="btn bg-green-500 absolute translate-x-[-75px] text-white hover:bg-red-500 ">Apply</button>
+
+                        </div>
+                        <div class="flex justify-between my-5 ">
+                            <h1 class="text-xl font-bold ">Grand Total</h1>
+                            <p class="text-xl font-bold">BDT <span > 0</span></p>
+                        </div>
+                        <div>
+                            <button class="btn  bg-green-500 text-white w-full hover:bg-orange-300">Next</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ticket booking end -->
+    </main>
+    <!-- ticket seat end -->
 </body>
 
 </html>
