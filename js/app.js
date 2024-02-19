@@ -63,6 +63,7 @@ disk.addEventListener('click', function(){
 
     if(couponcode==='NEW15'){   
         const discountamount=totalPrice*0.15;
+        document.getElementById('discountedprice').innerText=discountamount;
         const grandTotal=document.getElementById('grandtotalid');
         grandTotal.innerText=totalPrice-discountamount;
         document.getElementById('diskinput').value='';
@@ -71,6 +72,7 @@ disk.addEventListener('click', function(){
     }
     else if(couponcode2==='Couple 20'){
         const discountamount=totalPrice*0.2;
+        document.getElementById('discountedprice').innerText=discountamount;
         const grandTotal=document.getElementById('grandtotalid');
         grandTotal.innerText=totalPrice-discountamount;
         document.getElementById('diskinput').value='';
