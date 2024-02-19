@@ -12,8 +12,8 @@ for (const btnt of allbtn) {
         if (seat > 0) {
             seat--;
         }
-        
-        if (count <= '4' ) {
+
+        if (count <= '4') {
             btnt.style.background = "green";
             const seates = btnt.innerText;
             const clasess = document.getElementById('clases').innerText;
@@ -36,17 +36,48 @@ for (const btnt of allbtn) {
             totalPrice += prices;
             document.getElementById("totalprice").innerText = totalPrice;
 
-            
+
             document.getElementById('supid').innerText = count;
-            document.getElementById('seatid').innerText = seat;
+            document.getElementById('seatid').innerText = seat;     
+
 
         }
-        else{
+        else {
             alert(' Max only four seat select')
         }
 
     })
 }
+
+
+//discount//
+
+const disk= document.getElementById('discountid');
+disk.addEventListener('click', function(){
+    const couElement=document.getElementById('diskinput').value;
+    const couponcode=couElement.split(' ').join('')
+    const couponcode2=couElement.split(' ').join(' ')
+
+    if(couponcode==='NEW15'){   
+        const discountamount=totalPrice*0.15;
+        const grandTotal=document.getElementById('grandtotalid');
+        grandTotal.innerText=totalPrice-discountamount;
+        document.getElementById('diskinput').value='';
+    }
+    else if(couponcode2==='Couple 20'){
+        const discountamount=totalPrice*0.2;
+        const grandTotal=document.getElementById('grandtotalid');
+        grandTotal.innerText=totalPrice-discountamount;
+        document.getElementById('diskinput').value='';
+    }
+    else{
+        alert('Invalid coupne')
+    }
+    const couponeHidden=document.getElementById('couphidden');
+    couponeHidden.classList.add('hidden');
+
+})
+
 
 
 
