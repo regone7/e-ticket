@@ -38,6 +38,7 @@ for (const btnt of allbtn) {
 
             totalPrice += prices;
             document.getElementById("totalprice").innerText = totalPrice;
+            document.getElementById('grandtotalid').innerText=totalPrice;
 
 
             document.getElementById('supid').innerText = count;
