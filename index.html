@@ -124,7 +124,8 @@
                             </div>
                             <div>
                                 <h1 class="text-xl font-bold">Satkhira Paribahan</h1>
-                                <p>Coach-009-WEB ! <span class="clases">AC_Business</span></p>
+                                <!--                                                            -->
+                                <p>Coach-009-WEB ! <span id="clases">AC_Business</span></p>
                             </div>
                         </div>
                         <div class="flex items-center bg-green-200 rounded-lg p-3">
@@ -162,92 +163,111 @@
                 <div class="flex flex-col items-center lg:w-[34%] pt-20">
                     <img src="./images/fare.png" alt="">
                     <!-- ####                                                               -->
-                    <h1><span id="price">500</span>TK</h1>
+                    <h1><span id="price">550</span>TK</h1>
                     <p>per seat</p>
                 </div>
             </div>
         </section>
         <!-- seat and price start -->
         <!-- ticket booking start -->
-        <section id="next_screen" class="container mx-auto  mt-5  bg-white rounded-2xl p-7">
-            <div class="lg:flex lg:w-full">
-                <div class="lg:w-[40%] lg:p-5 lg:m-16">
-                    <h1 class="text-xl font-bold">Select Your Seat</h1>
-                    <br>
-                    <hr>
-                    <div class="flex justify-between items-center my-4">
-                        <div class="flex gap-2">
-                            <img src="./images/seat-gray.png" alt="">
-                            <p>Available</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <img src="./images/seat-green-filled.png" alt="">
-                            <p class="text-green-500">Selected</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="flex my-3 justify-end">
-                        <img src="./images/chaka.png" alt="">
-                    </div>
-                    <div class="flex space-x-5 justify-between">
-                        <div class="flex gap-2">
-                            <button class="btn clsbtn">A1</button>
-                            <button class="btn clsbtn">A2</button>
-                        </div>
-                        <div class="font-bold text-gray-300">A</div>
-                        <div class="flex gap-2">
-                            <button class="btn clsbtn">A3</button>
-                            <button class="btn clsbtn">A4</button>
-                        </div>
-                    </div>
-                    <div class="flex space-x-5 my-3 justify-between">
-                        <div class="flex gap-2">
-                            <button class="btn clsbtn">B1</button>
-                            <button class="btn clsbtn">B2</button>
-                        </div>
-                        <div class="font-bold text-gray-300">B</div>
-                        <div class="flex gap-2">
-                            <button class="btn clsbtn">B3</button>
-                            <button class="btn clsbtn">B4</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-[59%] lg:p-9 lg:m-7 ">
-                    <h1 class="text-xl font-bold mt-7 ">Select Your Seat</h1>
-                    <br>
-                    <hr>
-                    <br>
-                    <div class="bg-gray-100 p-5 rounded-xl ">
-                        <div id='creatid' class="flex justify-between">
-
-                            <h1 class="text-xl font-bold">Seat <sup id="supid" class="text-green-300 font-bold text-xl">0</sup></h1>
-
-                            <h1 class="text-xl font-bold">Class</h1>
-
-                            <h1 class="text-xl font-bold">Price</h1>
-
-                            <div id="content">
-
+        <section id="next_screen" class="container mx-auto  mt-5  bg-white rounded-2xl p-7 ">
+            <div id="buy_ticket">
+                <div  class="lg:flex lg:w-full">
+                    <div class="lg:w-[40%] lg:p-5 lg:m-16">
+                        <h1 class="text-xl font-bold">Select Your Seat</h1>
+                        <br>
+                        <hr>
+                        <div class="flex justify-between items-center my-4">
+                            <div class="flex gap-2">
+                                <img src="./images/seat-gray.png" alt="">
+                                <p>Available</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="./images/seat-green-filled.png" alt="">
+                                <p class="text-green-500">Selected</p>
                             </div>
                         </div>
-                        <div class="flex justify-between my-5 ">
-                            <h1 class="text-xl font-bold ">Total Price</h1>
-                            <p class="text-xl font-bold">BDT <span> 0</span></p>
+                        <hr>
+                        <div class="flex my-3 justify-end">
+                            <img src="./images/chaka.png" alt="">
                         </div>
-                        <div>
-                            <input type="text" placeholder="Have any copupone?"
-                                class="input input-bordered w-full relative " />
-                            <button
-                                class="btn bg-green-500 absolute translate-x-[-75px] text-white hover:bg-red-500 ">Apply</button>
-
+                        <div class="flex space-x-5 justify-between">
+                            <div class="flex gap-2">
+                                <button class="btn clsbtn">A1</button>
+                                <button class="btn clsbtn">A2</button>
+                            </div>
+                            <h1 class="text-gray-300 font-bold text-xl"> A</h1>
+                            <div class="flex gap-2">
+                                <button class="btn clsbtn">A3</button>
+                                <button class="btn clsbtn">A4</button>
+                            </div>
                         </div>
-                        <div class="flex justify-between my-5 ">
-                            <h1 class="text-xl font-bold ">Grand Total</h1>
-                            <p class="text-xl font-bold">BDT <span> 0</span></p>
+                        <div class="flex space-x-5 my-3 justify-between">
+                            <div class="flex gap-2">
+                                <button class="btn clsbtn">B1</button>
+                                <button class="btn clsbtn">B2</button>
+                            </div>
+                            <h1 class="text-gray-300 font-bold text-xl"> B </h1>
+                            <div class="flex gap-2">
+                                <button class="btn clsbtn">B3</button>
+                                <button class="btn clsbtn">B4</button>
+                            </div>
                         </div>
-                        <div>
-                            <button onclick="play()"
-                                class="btn  bg-green-500 text-white w-full hover:bg-orange-300">Next</button>
+                    </div>
+                    <div class="lg:w-[59%] lg:p-9 lg:m-7 ">
+                        <h1 class="text-xl font-bold mt-7 ">Select Your Seat</h1>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="bg-gray-100 p-5 rounded-xl ">
+    
+                            <div >
+                                <div class="overflow-x-auto">
+                                    <table class="table">
+                                        <!-- head -->
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>
+                                                    <h1 class="text-xl font-bold">Seat <sup id="supid"
+                                                            class="text-green-300 font-bold text-xl">0</sup></h1>
+                                                </th>
+                                                <th>
+                                                    <h1 class="text-xl font-bold">Class</h1>
+                                                </th>
+                                                <th>
+                                                    <h1 class="text-xl font-bold">Price</h1>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="content">
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+    
+                            <div class="flex justify-between my-5 ">
+                                <h1 class="text-xl font-bold ">Total Price</h1>
+                                <!--
+                                                                                                 -->
+                                <p class="text-xl font-bold">BDT <span id="totalprice"> 0</span></p>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Have any copupone?"
+                                    class="input input-bordered w-full relative " />
+                                <button
+                                    class="btn bg-green-500 absolute translate-x-[-75px] text-white hover:bg-red-500 ">Apply</button>
+    
+                            </div>
+                            <div class="flex justify-between my-5 ">
+                                <h1 class="text-xl font-bold ">Grand Total</h1>
+                                <p class="text-xl font-bold">BDT <span> 0</span></p>
+                            </div>
+                            <div>
+                                <button onclick="play()"
+                                    class="btn  bg-green-500 text-white w-full hover:bg-orange-300">Next</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -255,7 +275,7 @@
         </section>
 
         <!-- ticket booking end -->
-        <section id="success_screen" class="container mx-auto w-96  mt-5  bg-white rounded-sm p-7 hidden ">
+        <section id="success_screen" class="container mx-auto w-96  mt-5   bg-white rounded-sm p-7 hidden ">
             <div>
                 <div class="flex flex-col justify-center items-center space-y-3">
                     <img src="./images/success.png" alt="">
