@@ -9,7 +9,6 @@ let i=1;
 for (const btnt of allbtn) {
     btnt.addEventListener("click", function (e) {
         count = count + 1;
-        e.target
         if (seat > 0) {
             seat--;
         }
